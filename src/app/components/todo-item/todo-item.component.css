@@ -1,0 +1,18 @@
+
+.todoWrapper {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.removeTodo {
+  width: auto;
+}
+
+.todoText {
+  padding-left: 10px;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.3em;
+}
