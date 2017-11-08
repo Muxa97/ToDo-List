@@ -40,5 +40,18 @@ export class TodoService {
 
   public removeTodo(id: number): void {
     this.todos = this.todos.filter((todo) => todo.id !== id);
+    this.nextId--;
+    this.saveTodos();
+  }
+
+  public changeTodo(id: number, text: string): void {
+    this.todos[id].text = text;
+    this.todos[id].done = false;
+    this.saveTodos();
+  }
+
+  public changeDone(id: number, done: boolean): void {
+    this.todos[id].done = done;
+    this.saveTodos();
   }
 }

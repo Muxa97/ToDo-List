@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -16,13 +17,14 @@ import { TodoItemComponent } from './components/todo-item/todo-item.component';
     AppComponent,
     HeaderComponent,
     TodoInputComponent,
-    TodoItemComponent
+    TodoItemComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MatButtonModule,
     MatInputModule,
+    MatCheckboxModule,
     BrowserAnimationsModule
   ],
   providers: [

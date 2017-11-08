@@ -12,7 +12,22 @@
 
 .todoText {
   padding-left: 10px;
+  padding-top: 10px;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 1.3em;
+  overflow: hidden;
+}
+
+.todoEditWrapper {
+  padding-left: 10px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.doneCheckbox {
+  margin: auto;
+  width: auto;
 }

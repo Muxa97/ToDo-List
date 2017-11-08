@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from '../../services/todo.service';
+import {ENTER} from "@angular/cdk/keycodes";
 
 @Component({
   selector: 'app-todo-input',
@@ -22,5 +23,4 @@ export class TodoInputComponent implements OnInit {
     this.todoService.addTodo(this.todoText);
     this.todoText = '';
   }
-
 }
